@@ -5,21 +5,21 @@
 class Dashcrew < Formula
   desc "Agent-agnostic AI coding toolkit with a guard for agent tool calls"
   homepage "https://github.com/fahnaladitia/dashcrew"
-  version "0.2.1"
+  version "0.3.0"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.2.1/dashcrew_0.2.1_darwin_amd64.tar.gz"
-      sha256 "31b902453313935fd22ecb0e63c04c520f13ab8f1c341b673a5ff227abe9e423"
+      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.3.0/dashcrew_0.3.0_darwin_amd64.tar.gz"
+      sha256 "eff38f2cdcb5b8712f28c92d5a0ed7ea2b2e73f971f6f695a45b793b26ec3b8e"
 
       define_method(:install) do
         bin.install "dashcrew"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.2.1/dashcrew_0.2.1_darwin_arm64.tar.gz"
-      sha256 "c189cc27eb10c81b06c7028dbbe8fc1119326fc4ea317395612974599b7d61cd"
+      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.3.0/dashcrew_0.3.0_darwin_arm64.tar.gz"
+      sha256 "8a0cb401e5be1a82e779ea437e48815cc7bee2d54cc59454a873ede85b6bef80"
 
       define_method(:install) do
         bin.install "dashcrew"
@@ -29,15 +29,15 @@ class Dashcrew < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.2.1/dashcrew_0.2.1_linux_amd64.tar.gz"
-      sha256 "c7b8112ae6df0d2c5f32814e5f851e71e0eef8fd0158ac1df7ed6a77addf65ed"
+      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.3.0/dashcrew_0.3.0_linux_amd64.tar.gz"
+      sha256 "3195a126b16f3adfb50b57971b11e22a068c1a055b1a4e0d1d9a3323bb17a199"
       define_method(:install) do
         bin.install "dashcrew"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.2.1/dashcrew_0.2.1_linux_arm64.tar.gz"
-      sha256 "97ddb79054410f1a2ffffaa3ab4550c22fe097708a5d74a839fd2da0a4ac2868"
+      url "https://github.com/fahnaladitia/dashcrew/releases/download/v0.3.0/dashcrew_0.3.0_linux_arm64.tar.gz"
+      sha256 "3068e3f17943d77f20f0907de57b259cedd98731fd47072126bb1252f947ac1c"
       define_method(:install) do
         bin.install "dashcrew"
       end
